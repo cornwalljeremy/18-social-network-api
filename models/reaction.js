@@ -1,14 +1,11 @@
 const { Schema, Types } = require("mongoose");
 
-const reactionSchema = new Schema({
-  noteId: {
-    type: Schema.Types.ObjectId,
-    default: Date.now,
-  },
-});
-
 const reactionSchema = new Schema(
   {
+    noteId: {
+      type: Schema.Types.ObjectId,
+      default: Date.now,
+    },
     reactionId: {
       type: Schema.Types.ObjectId,
     },
