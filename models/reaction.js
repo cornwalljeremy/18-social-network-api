@@ -28,7 +28,7 @@ const reactionSchema = new Schema(
       //   **** get: '<insert get timestamp here>'****
     },
 
-    reactions: [reactionSchema],
+    // reactions: [reactionSchema],
   },
   {
     toJSON: {
