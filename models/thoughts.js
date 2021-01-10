@@ -12,7 +12,7 @@ const ThoughtSchema = new Schema(
     thoughtCreated: {
       type: Date,
       default: Date.now,
-    //   **** get: '<insert get timestamp here>'****
+      get: (createdAtVal) => dateFormat(createdAtVal)
     },
     username: {
         type: String,
