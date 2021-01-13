@@ -1,5 +1,6 @@
 const { Schema, model } = require("mongoose");
-const reactionSchema = require('./reaction')
+const reactionSchema = require('./reaction');
+const dateFormat = require("../utils/dateFormat");
 
 const ThoughtSchema = new Schema(
   {
@@ -7,7 +8,7 @@ const ThoughtSchema = new Schema(
       type: String,
       minlength: 1,
       maxlength: 280,
-      required: "Thoughs Are Required",
+      required: "Thoughts Are Required",
     },
     thoughtCreated: {
       type: Date,
