@@ -3,12 +3,9 @@ const dateFormat = require("../utils/dateFormat");
 
 const reactionSchema = new Schema(
   {
-    noteId: {
-      type: Schema.Types.ObjectId,
-      default: Date.now,
-    },
     reactionId: {
       type: Schema.Types.ObjectId,
+      default: Date.now,
     },
 
     reactionBody: {
@@ -26,7 +23,7 @@ const reactionSchema = new Schema(
     createdAt: {
       type: Date,
       default: Date.now,
-      get: (createdAtVal) => dateFormat(createdAtVal)
+      get: (createdAtVal) => dateFormat(createdAtVal),
     },
 
     // reactions: [reactionSchema],
